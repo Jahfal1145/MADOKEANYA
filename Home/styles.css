@@ -1,0 +1,115 @@
+
+header {
+    display: flex;
+    background-color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.header-items a {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+header a {
+    margin-left: 3rem;
+    margin-right: 2rem;
+    font-size: medium;
+    text-decoration: none;
+}
+
+header img   {
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.header-img {
+    display: flex; 
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.header-img h2 {
+    color: black;
+}
+
+.header-items a {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0 auto;
+   padding: 0;  
+}
+
+.intro {
+    width: 100%;
+    height: 600px;
+    background-image: url("Foto.png");
+    background-size: cover;
+    opacity: 70%;
+    display: inline-block;
+}
+
+.intro h1 {
+    color: black;
+    margin-top: 8%;
+    margin-left: 1%;
+    font-size: 210%;
+    font-family: Arial;
+}
+
+.intro h2 {
+    color: rgb(0, 0, 0);
+    margin-top: -1%;
+    margin-left: 2%;
+    font-size: medium;
+    font-family: 'arial';
+}
+
+.intro button {
+    margin-top: 3%;
+    margin-left: 4%;
+    width: 14rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    transition: all .3s linear;
+    font-weight: 800;
+    font-size: large;
+}
+
+.intro  button:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer h2 {
+    font-family: arial;
+    text-align: center;
+}
+
+footer h4 {
+    font-family: arial;
+    text-align: center ;
+    margin-bottom: 1px;
+}
