@@ -1,0 +1,222 @@
+/* pala */
+
+nav {
+background-color: #f2f2f2;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.kiri {
+display: flex;
+align-items: center;
+}
+
+.logo {
+margin-right: 10px;
+}
+
+.judul {
+font-weight: bold;
+font-size: 20px;
+}
+
+.judul a {
+text-decoration: none;
+}
+.kanan {
+display: flex;
+}
+
+.kanan a {
+padding: 10px;
+text-decoration: none;
+color: #333;
+transition: background-color 0.3;
+}
+
+.kanan a:hover {
+color: #E195AB;
+}
+
+/*badan keamanan*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*kaki*/
+
+footer h2 {
+  font-family: arial;
+  text-align: center;
+}
+
+footer h4 {
+  font-family: arial;
+  text-align: center ;
+  margin-bottom: 1px;
+}
+
+
+/*homepage*/
+.img img {
+  margin-bottom: 30px;
+  margin-top:15px ;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+   object-fit: cover;
+    border-radius: 20px;
+}
+
+/*tabel*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 20px;
+  text-align: center;
+}
+
+.gambar img {
+  max-width: 50%;
+  height: auto;
+}
+
+.teks {
+  vertical-align: middle;
+}
+
+/*login*/
+
+..button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #E195AB;
+  color: #ffffff;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 40px;
+  height: 39px;
+}
+
+.signup {
+  color: #000000;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  height: 19px;
+  padding-top:10px;
+}
+
+.signuptext {
+  color: #000000;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+  display: inline-block;
+  height: 19px;
+  padding-top:10px;
+}
+
+.login {
+  margin-left: 35px;
+  font-size:50px;
+}
+
+.login-container {
+  background-color: #fff;
+  margin-top: 200px;
+  margin-left: 30px;
+  padding: 55px;
+  padding-right: 20px;
+  padding-bottom: -20px;
+  padding-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+
+input, select {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+.intro {
+  width: 100%;
+  height: 700px;
+  background-image: url("foto/Foto.png");
+  background-size: cover;
+  opacity: 70%;
+  display: inline-block;
+}
+
+
+td img {
+  border-radius: 1000px;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.custom-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.custom-button img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.navbaradmin h2 {
+  background-color: #f2f2f2;
+  text-align: center;
+}
