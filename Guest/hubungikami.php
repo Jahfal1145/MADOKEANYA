@@ -12,17 +12,17 @@
     <div class="home-nav">
     <div class="nav-kiri">
       <div class="nav-logo">
-        <a href="home.php"><img src="../foto/Logo.png" alt="Logo" width="50"></a>
+        <a href="index.php"><img src="../foto/Logo.png" alt="Logo" width="50"></a>
       </div>
       <div class="nav-judul">
-        <a href="home.php"><span style="color: black;">MADOKE</span><span style="color:#E195AB;">ANYA</span></a>
+        <a href="../index.php"><span style="color: black;">MADOKE</span><span style="color:#E195AB;">ANYA</span></a>
       </div>
     </div>
     <div class="nav-kanan">
-      <a href="mariberdonasi.php">Mari berdonasi!</a>
+      <a href="mariberdonasi.php">mMri berdonasi!</a>
       <a href="tentangkami.php">Tentang Kami</a>
       <a href="hubungikami.php">Hubungi Kami</a>
-      <a href="../login/loginpage.php">Logout</a>
+      <a href="../login/loginpage.php">Login</a>
     </div>
   </nav>
 </div>

@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <link rel="stylesheet" href="../style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADOKEANYA</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-<nav>
- <div class="kiri">
-    <div class="logo">
-      <a href="index.php"><img src="../foto/Logo.png" alt="Logo" width="50"></a>
+  <nav>
+    <div class="home-nav">
+      <div class="nav-kiri">
+        <div class="nav-logo">
+          <a href="index.php"><img src="../foto/Logo.png" alt="Logo" width="50"></a>
+        </div>
+        <div class="nav-judul">
+          <a href="../index.php"><span style="color: black;">MADOKE</span><span style="color:#E195AB;">ANYA</span></a>
+        </div>
+      </div>
+      <div class="nav-kanan">
+        <a href="../guest/mariberdonasi.php">mari berdonasi!</a>
+        <a href="../guest/tentangkami.php">Tentang Kami</a>
+        <a href="../guest/hubungikami.php">Hubungi Kami</a>
+        <a href="../login/loginpage.php">login</a>
+      </div>
     </div>
-    <div class="judul">
-      <a href="../index.php"><span style="color: black;">MADOKE</span><span style="color:#E195AB;">ANYA</span></a>
-    </div>
+  </nav> 
+  
+  <div class="signin-container">
+    <h1 class="signin-title">Sign In</h1>
+    <form action="regis.php" method="post" class="signin-form">
+      <input type="text" id="username" name="username" placeholder="Username.." required />
+      <input type="text" id="password" name="password" placeholder="Password.." required />
+      <input type="text" id="email" name="email" placeholder="Email.." required />
+      <button type="submit" name="submit" class="signin-button">Submit</button>
+    </form>
   </div>
-</nav>
-
-
-<h1 class="login" >Sign In</h1>
-  <form action="regis.php" method="post">
-
-    <input type="text" id="username" name="username" placeholder="Username.." required>
-
-    <input type="text" id="password" name="password" placeholder="Password.." required>
-
-    <input type="text" id="email" name="email" placeholder="Email.." required>
-
-        <select id="tipe" name="tipe" class="tipe">
-            <option value="admin">Admin</option>
-            <option value="user">User</option>
-        </select>
-
-    <button type="Submit" name="Submit">Submit</button>
-  </form>
-
-<footer>
-  <h2>MADOKE<span style="color: #E195AB;">ANYA</span></h2><br>
+  
+ <footer>
+    <div class="home-foot">
+    <h2>MADOKE<span style="color: #E195AB;">ANYA</span></h2><br>
     <h4>©copyright MADOKEANYA 2024.</h4>
+    </div>
+  </footer>
 
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>

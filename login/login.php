@@ -1,29 +1,49 @@
 <?php
 session_start();
-include 'koneksi.php';
+require '../koneksi.php'; // atau sesuaikan path koneksi.php
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-$login = mysqli_query($mysqli,"select * from user where username='$username' and password='$password'");
-$cek = mysqli_num_rows($login);
+    // Querynya gunakan backtick karena 'user' adalah reserved word
+    $query = "SELECT id_user, password, tipe FROM `user` WHERE username = ?";
+    $stmt = $mysqli->prepare($query);
 
-if($cek > 0)
+    // Cek jika prepare gagal
+    if (!$stmt) {
+        die("Query gagal dipersiapkan: (" . $mysqli->errno . ") " . $mysqli->error);
+    }
 
-    $data = mysqli_fetch_assoc($login);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->store_result();
 
-    if($data['tipe']=="admin"){
+    // Cek apakah user ditemukan
+    if ($stmt->num_rows == 1) {
+        $stmt->bind_result($id, $hashed_password, $tipe);
+        $stmt->fetch();
 
-        $_SESSION['username'] = $username;
-        $_SESSION['TIPE'] = "admin";
-        header("location:../admin/admin.php");
+        if ($password === $hashed_password) {
+            $_SESSION['id_user'] = $id;
+            $_SESSION['tipe'] = $tipe;
 
-    }else if($data['tipe']=="user"){
+            // Redirect sesuai tipe
+            if ($tipe === 'user') {
+                header("Location: ../user/home.php");
+            } elseif ($tipe === 'admin') {
+                header("Location: ../admin/admin.php");
+            } elseif ($tipe === 'penerima') {
+                header("Location: ../penerima/penerima.php");
+            }
+            exit;
+        } else {
+            echo "❌ Password salah!";
+        }
+    } else {
+        echo "❌ User tidak ditemukan!";
+    }
 
-        $_SESSION['username'] = $username;
-        $_SESSION['TIPE'] = "user";
-        header("location:../user/home.php");
-
-    }else{
-    header("location:salah.php");
+    $stmt->close();
 }
+?>

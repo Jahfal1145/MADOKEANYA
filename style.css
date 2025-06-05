@@ -1,6 +1,6 @@
 /* pala */
 
-nav {
+.home-nav {
 background-color: #f2f2f2;
 padding: 10px;
 display: flex;
@@ -8,177 +8,223 @@ justify-content: space-between;
 align-items: center;
 }
 
-.kiri {
-display: flex;
-align-items: center;
+.nav-kiri {
+  display: flex;
+  align-items: center;
 }
 
-.logo {
+.nav-logo {
 margin-right: 10px;
 }
 
-.judul {
+.nav-judul {
 font-weight: bold;
 font-size: 20px;
 }
 
-.judul a {
+.nav-judul a {
 text-decoration: none;
 }
-.kanan {
+.nav-kanan {
 display: flex;
 }
 
-.kanan a {
+.nav-kanan a {
 padding: 10px;
 text-decoration: none;
 color: #333;
 transition: background-color 0.3;
 }
 
-.kanan a:hover {
+.nav-kanan a:hover {
 color: #E195AB;
 }
+
+
+
 
 /*badan keamanan*/
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
 
 /*kaki*/
 
-footer h2 {
-  font-family: arial;
+.home-foot h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
-footer h4 {
+.home-foot h4 {
   font-family: arial;
   text-align: center ;
   margin-bottom: 1px;
 }
 
 
+
+
 /*homepage*/
-.img img {
+.home-img img {
   margin-bottom: 30px;
-  margin-top:15px ;
   width: 100%;
-  height: 400px;
+  height: 800px;
   justify-content: center;
   align-items: center;
    object-fit: cover;
-    border-radius: 20px;
+   position: relative;
+   overflow: hidden;
+   filter: brightness(70%);;
+   display: block;
 }
 
-/*tabel*/
+.home-img-text {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* geser ke samping kiri */
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+}
 
-table {
+.home-img-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.home-img-text p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home-img-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #E195AB;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.home-img-button:hover {
+  background-color: #d17b96;
+}
+
+
+/*homepage-tabel*/
+.home-table table {
   width: 100%;
   border-collapse: collapse;
+  margin: 50px auto;
+  background-color: #fff;
 }
 
-td {
-  padding: 20px;
+.home-table td {
+  vertical-align: middle;
+  padding: 40px;
+}
+
+.home-table .home-teks1,
+.home-table .home-teks2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2c3e50;
+  text-align: center;
+  background-color: #f2f6fa;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.home-table .home-teks1 h3,
+.home-table .home-teks2 h3 {
+  margin: 0;
+  font-weight: 500;
   text-align: center;
 }
 
-.gambar img {
-  max-width: 50%;
+.home-table .home-gambar {
+  text-align: center;
+}
+
+.home-table .home-gambar img {
+  max-width: 80%;
+  width: 300px;
   height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-.teks {
-  vertical-align: middle;
+.home-table .home-gambar img:hover {
+  transform: scale(1.03);
 }
 
-/*login*/
+.home-table tr:nth-child(2) .home-gambar img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
-..button-container {
+
+
+/*hubungikami*/
+
+.hk-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.hk-table table {
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hk-card {
+  text-align: center;
+  padding: 40px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hk-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.hk-image:hover {
+  transform: scale(1.05);
+}
+
+.hk-text p {
+  font-size: 17px;
+  color: #2c3e50;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.button-container {
   display: flex;
   align-items: center;
   margin-top: 30px;
-}
-
-button {
-  background-color: #E195AB;
-  color: #ffffff;
-  padding: 10px;
-  padding-right: 50px;
-  padding-left: 50px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-right: 10px;
-  margin-left: 40px;
-  height: 39px;
-}
-
-.signup {
-  color: #000000;
-  padding: 10px;
-  border-radius: 4px;
-  display: inline-block;
-  height: 19px;
-  padding-top:10px;
-}
-
-.signuptext {
-  color: #000000;
-  padding: 10px;
-  margin-left: 20px;
-  border-radius: 4px;
-  display: inline-block;
-  height: 19px;
-  padding-top:10px;
-}
-
-.login {
-  margin-left: 35px;
-  font-size:50px;
-}
-
-.login-container {
-  background-color: #fff;
-  margin-top: 200px;
-  margin-left: 30px;
-  padding: 55px;
-  padding-right: 20px;
-  padding-bottom: -20px;
-  padding-top: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
-}
-
-
-input, select {
-  width: 80%;
-  padding: 15px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  margin-left: 30px;
-}
-
-.intro {
-  width: 100%;
-  height: 700px;
-  background-image: url("foto/Foto.png");
-  background-size: cover;
-  opacity: 70%;
-  display: inline-block;
-}
-
-
-td img {
-  border-radius: 1000px;
-  padding: 20px;
-  width: 500px;
-  height: 500px;
 }
 
 .container {
@@ -219,4 +265,697 @@ td img {
 .navbaradmin h2 {
   background-color: #f2f2f2;
   text-align: center;
+}
+
+.hk-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.hk-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hk-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hk-custom-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.hk-custom-button img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+
+
+
+/*mariberdonasi*/
+
+.donasi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.donasi-item {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.donasi-foto {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.donasi-foto img {
+  width: 526px;
+  height: 362px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.donasi-info {
+  flex-grow: 1;
+}
+
+.donasi-judul {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.donasi-publisher {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.donasi-deskripsi {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* tampilkan 3 baris saja */
+  -webkit-box-orient: vertical;
+}
+
+.donasi-target {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.donasi-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background-color: #E195AB;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.donasi-info a:hover {
+  background-color: #d17b96;
+}
+
+
+
+
+/*tentangkami*/
+
+.tk-text {
+  background-color: #f2f6fa;
+  color: #2c3e50;
+  padding: 30px 40px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.tk-text:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/*login*/
+
+.login-button {
+  background-color: #E195AB;
+  color: #ffffff;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 40px;
+  height: 39px;
+}
+
+.login-signup {
+  color: #000000;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  height: 19px;
+  padding-top: 10px;
+}
+
+.login-signuptext {
+  color: #000000;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+  display: inline-block;
+  height: 19px;
+  padding-top: 10px;
+}
+
+.login-login {
+  margin-left: 35px;
+  font-size: 50px;
+}
+
+.login-login-container {
+  background-color: #fff;
+  margin-top: 200px;
+  margin-left: 30px;
+  padding: 55px 20px 0px 55px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.body-login input, 
+.body-login select {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+.login-intro {
+  width: 100%;
+  height: 700px;
+  background-image: url("foto/Foto.png");
+  background-size: cover;
+  opacity: 70%;
+  display: inline-block;
+}
+
+/*signin*/
+
+.signin-container {
+  max-width: 500px;
+  margin: 80px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.signin-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+.signin-form input {
+  width: 90%;
+  margin: 0 auto 20px;
+  display: block;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+
+.signin-button {
+  width: 100%;
+  background-color: #E195AB;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: #d17b96;
+}
+
+/*donasi*/
+
+.berdonasi-body body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.berdonasi-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.berdonasi-left,
+.berdonasi-right {
+  flex: 1;
+}
+
+.berdonasi-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.berdonasi-box h3 {
+  margin-top: 0;
+}
+
+.berdonasi-info p {
+  margin: 5px 0;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.berdonasi-body textarea,
+.berdonasi-body select,
+.berdonasi-body input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 11px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.berdonasi-donasi-button{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: green;
+  border: 2px solid #adadad;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.berdonasi-donasi-button:hover {
+  color: rgb(200, 200, 200);
+  background: green;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  border-color: #adadad;
+}
+
+.berdonasi-back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.berdonasi-back-button:hover {
+  color: white;
+  background: #333;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  border-color: #333;
+}
+
+.berdonasi-qr-image {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.berdonasi-qr-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.berdonasi-upload-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.berdonasi-upload-input {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.berdonasi-upload-input:hover {
+  background: #f0f0f0;
+}
+
+
+/*admin*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-admin-body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Sidebar */
+.home-admin-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.home-admin-sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.home-admin-sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ecf0f1;
+  display: block;
+  transition: background 0.3s;
+}
+
+.home-admin-sidebar a:hover {
+  background-color: #34495e;
+}
+
+.home-admin-sidebar a.active {
+  background-color: #1abc9c;
+}
+
+/* Konten utama */
+.home-admin-main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+/*admin-user*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.user-admin-body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Sidebar */
+.user-admin-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.user-admin-sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.user-admin-sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ecf0f1;
+  display: block;
+  transition: background 0.3s;
+}
+
+.user-admin-sidebar a:hover {
+  background-color: #34495e;
+}
+
+.user-admin-sidebar a.active {
+  background-color: #1abc9c;
+}
+
+/* Konten utama */
+.user-admin-main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+.user-admin-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-admin-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(25% - 20px); /* 4 per baris, dikurangi gap */
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user-admin-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.user-admin-card p {
+  margin-bottom: 5px;
+}
+
+.user-admin-actions a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.user-admin-edit {
+  color: green;
+}
+
+.user-admin-delete {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-admin-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .user-admin-card {
+    width: 100%;
+  }
+}
+
+
+/*donasiadmin*/
+.donasi-admin-body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.donasi-admin-sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.donasi-admin-sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.donasi-admin-sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ecf0f1;
+  display: block;
+  transition: background 0.3s;
+}
+
+.donasi-admin-sidebar a:hover {
+  background-color: #34495e;
+}
+
+.donasi-admin-sidebar a.active {
+  background-color: #1abc9c;
+}
+
+.donasi-admin-main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+.donasi-admin-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.donasi-admin-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(25% - 20px);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.donasi-admin-card img {
+  width: 263px;
+  height: 191px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.donasi-admin-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.donasi-admin-card p {
+  margin-bottom: 5px;
+}
+
+.donasi-admin-actions a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.donasi-admin-edit {
+  color: green;
+}
+
+.donasi-admin-delete {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .donasi-admin-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .donasi-admin-card {
+    width: 100%;
+  }
+}
+
+.donasi-admin-floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1abc9c;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.donasi-admin-floating-button:hover {
+  background-color: #16a085;
 }

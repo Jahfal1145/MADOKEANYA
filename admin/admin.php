@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <link rel="stylesheet" href="../style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <header class="navbaradmin">
-        <h2>Selamat Datang Di Panel Admin</h2>
-    </header>
+<body class="home-admin-body">
 
-<li><a href="index2.php">Users</a></li>
-<li><a href="../login/loginpage.php">logout</a></li>
+  <div class="home-admin-sidebar">
+    <a href="../admin/admin.php"><h2>Admin Panel</h2></a>
+    <a href="user/user.php">Pengguna</a>
+    <a href="donasi/donasi.php">Donasi</a>
+    <a href="laporan/laporan.php">Laporan</a>
+    <a href="transaksi/transaksi.php">Transaksi</a>
+    <a href="metode/metode.php">Metode</a>
+    <a href="../login/loginpage.php">Keluar</a>
+  </div>
 
-    <script src="scripts.js"></script>
+  <div class="home-admin-main-content">
+    <center>
+      <h1>Selamat Datang di Panel Admin</h1>
+      <p>Ini adalah konten utama dari halaman admin Anda.</p>
+    </center>
+  </div>
+
 </body>
 </html>
